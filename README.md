@@ -36,7 +36,10 @@ scheduler/ — Algorithms and metrics
 
 data/icu_scenarios.json — ICU workload configs
 
-assets/ — (Optional) images/screenshots
+<img width="1918" height="762" alt="image" src="https://github.com/user-attachments/assets/b46c5d7e-fa03-4d8e-a335-9d9ebc92dd77" />
+<img width="1918" height="762" alt="image" src="https://github.com/user-attachments/assets/9cd9740b-5731-4b69-ad7e-3295f2239fb9" />
+
+
 
 requirements.txt — Dependencies
 
