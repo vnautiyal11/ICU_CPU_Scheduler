@@ -1,0 +1,18 @@
+{
+  "Normal Monitoring": [
+    {"pid": "ECG-01", "arrival": 0, "burst": 4, "priority": 3},
+    {"pid": "SpO2-02", "arrival": 1, "burst": 2, "priority": 4},
+    {"pid": "BP-03", "arrival": 2, "burst": 3, "priority": 3}
+  ],
+  "Hypotension Alert": [
+    {"pid": "BP-ALERT", "arrival": 0, "burst": 5, "priority": 1},
+    {"pid": "ECG-01", "arrival": 1, "burst": 3, "priority": 2},
+    {"pid": "SpO2-02", "arrival": 2, "burst": 1, "priority": 3}
+  ],
+  "Code Blue (Cardiac Arrest)": [
+    {"pid": "ECG-EMERG", "arrival": 0, "burst": 2, "priority": 1},
+    {"pid": "Defib-Check", "arrival": 0, "burst": 1, "priority": 1},
+    {"pid": "Vent-Status", "arrival": 1, "burst": 3, "priority": 2},
+    {"pid": "SpO2-Monitor", "arrival": 2, "burst": 1, "priority": 3}
+  ]
+}
