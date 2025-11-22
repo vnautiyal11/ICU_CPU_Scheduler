@@ -9,6 +9,21 @@ from datetime import datetime
 from typing import List, Dict
 
 # ---------------------------
+# 🔐 Config & Data
+# ---------------------------
+APP_TITLE = "🏥 ICU CPU Scheduling Simulator"
+APP_ICON = "⚕️"
+
+# ---- This must be the first Streamlit function call ----
+st.set_page_config(
+    page_title=APP_TITLE,
+    page_icon=APP_ICON,
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+# --------------------------------------------------------
+
+# ---------------------------
 # 🌑 Dark Mode Only (High-Contrast ICU Theme)
 # ---------------------------
 st.markdown("""
@@ -81,18 +96,8 @@ from scheduler.algorithms import Process, fcfs, sjf_non_preemptive, priority_non
 from scheduler.metrics import calculate_metrics, cpu_utilization, avg_waiting_time, avg_turnaround_time
 
 # ---------------------------
-# 🔐 Config & Data
+# 🔐 Data Load and Scenario Setup
 # ---------------------------
-APP_TITLE = "🏥 ICU CPU Scheduling Simulator"
-APP_ICON = "⚕️"
-
-st.set_page_config(
-    page_title=APP_TITLE,
-    page_icon=APP_ICON,
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
 DATA_DIR = Path(__file__).parent / "data"
 SCENARIOS: Dict[str, List[Process]] = {}
 
